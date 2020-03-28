@@ -23,5 +23,5 @@
 
 - K-means
 
-
+- Native Bayes classifier
 
