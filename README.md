@@ -2,6 +2,7 @@
 
 
 - Linear regression
+  - Linear classifier/regression
   - Ridge classifier/regression
   - Lasso classifier/regression
   - ElasticNet classifier/regression
