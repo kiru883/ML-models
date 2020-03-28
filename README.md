@@ -1,4 +1,4 @@
-# ML-classical-models
+# ML classical models
 
 
 - Linear regression
