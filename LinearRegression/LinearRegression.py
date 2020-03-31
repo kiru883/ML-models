@@ -35,8 +35,10 @@ class LinearRegression:
         for epoch in range(self.optimizer['epochs']):
             X_batch, y_batch = X[epoch*batch_size:(epoch+1)*batch_size], y[epoch*batch_size:(epoch+1)*batch_size]
 
+            # if solve is optimization method
             if self.optimizer['learning_rate'] != 'full':
                 self.weights += self.optimizer['learning_rate'] * self.optimizer['object'](X_batch, y_batch)
+            # if analytical solve
             else:
                 self.weights = self.optimizer['object'](X_batch, y_batch)
 
@@ -58,4 +60,3 @@ class LinearRegression:
         dldy = np.matmul(X, np.transpose(self.weights)) - y
         grad_weights_avg = np.sum((X * dldy), axis=0) / X.shape[0]
         return -grad_weights_avg
-
