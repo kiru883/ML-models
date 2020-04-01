@@ -3,9 +3,9 @@
 
 - Linear regression
   - Linear classifier/regression
-  - Ridge classifier/regression
-  - Lasso classifier/regression
-  - ElasticNet classifier/regression
+  - Ridge regression
+  - Lasso regression
+  - ElasticNet regression
 
 - KNN
   - KNN classification
